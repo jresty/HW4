@@ -1,0 +1,21 @@
+1)
+Over time the size of the free list increases.
+
+2)
+Using worst fit, the size of the free list is greater. There are also more small chunks than there were with best fit, increasing the number of items searched, too.
+
+3)
+The amount of elements searched speeds up, as in it doe snot need to travel as far to find a spot to place the memory, if that makes sense.
+
+4)
+Sorting by address or by ascending size does not change anything while using the FIRST policy. When sorting from greatest to least, the amount of splitting done increases and so does the size of the free list..
+Sorting by address or by ascending size or descending does not change anything meaningful while using the BEST policy.
+
+5)
+Over time, there are so many smaller splits that there is not enough memory to allocate for the pointer
+
+6)
+[Best]Near 50: The size of the free list increases and the amount of pointers decreases.
+[Best]Near 100: Free list size remains 1. 
+
+7)
